@@ -11,7 +11,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const auth = require('./routes/auth');
-
+app.use('/', auth)
 
 
 
@@ -23,7 +23,7 @@ mongoose.connect(process.env.MONGODB_URL)
     console.error('error occured', err.message);
 })
 
-app.use('/', auth)
+
 
 const Port = process.env.PORT || 4000;
 app.listen(Port, ()=>{
