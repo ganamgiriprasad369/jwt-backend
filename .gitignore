@@ -1,0 +1,14 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# OS-generated files
+.DS_Store
+
+# Dependency lock file (optional – depends on your team)
+package-lock.json
